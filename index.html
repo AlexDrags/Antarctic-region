@@ -359,7 +359,7 @@
               <input type="tel" name="phone" id="" placeholder="Телефон" required>
               <input type="email" name="mail" id="" placeholder="Email" required>
               <label for="accept">
-                <input type="checkbox" name="" id="accept" checked>
+                <input class="visually-hidden" type="checkbox" name="" id="accept" checked>
                 <span></span>
                 <span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
               </label>
@@ -394,8 +394,59 @@
         </div>
       </section>
     </main>
-    <footer style="min-height: 300px; background-color: black;">
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo-wrapper logo">
+          <a class="logo__link" href="/">
+            <svg class="logo__image logo__image--small" width="42" height="22">
+              <use xlink:href="img/sprite.svg#logo-mobile"></use>
+            </svg>
+            <svg class="logo__image logo__image--middle" width="38" height="20">
+              <use xlink:href="img/sprite.svg#logo-tablet"></use>
+            </svg>
+            <svg class="logo__image logo__image--big" width="70" height="38">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="main-nav main-nav--footer">
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="/">Преимущества</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="/">Направления</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="/">Ближайшие круизы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="/">Контакты</a></li>
+          </ul>
+
+          <ul class="main-nav__socials-list socials-list">
+            <li class="socials-list__item">
+              <a class="socials-list__link" href="/">
+                <span class="visually-hidden">Одноклассники</span>
+                <svg class="socials-list__icon icon-1" width="12" height="20">
+                  <use xlink:href="img/sprite.svg#socIcon-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item">
+              <a class="socials-list__link" href="/">
+                <span class="visually-hidden">pinterest</span>
+                <svg class="socials-list__icon icon-2" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#socIcon-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item">
+              <a class="socials-list__link" href="/">
+                <span class="visually-hidden">Не знаю что это такое</span>
+                <svg class="socials-list__icon icon-3" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#socIcon-3"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
     </footer>
   </div>
 
