@@ -31,7 +31,7 @@
           </div>
           <nav class="main-nav">
             <!-- Класс открытого меню без js: .main-nav__list--nojs--open; закрытого: .main-nav__list-nojs--close -->
-            <div class="main-nav_wrapper">
+            <div class="main-nav__wrapper">
               <ul class="main-nav__list main-nav__list--nojs--open menu-js">
                 <li class="main-nav__item"><a class="main-nav__link" href="#preferns">Преимущества</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="#directions">Направления</a></li>
@@ -154,7 +154,7 @@
                     <dt>Цена</dt>
                     <dd>от 11500 $</dd>
                   </dl>
-                  <button class="products-list__button" type="button">Забронировать</button>
+                  <a class="products-list__button" target="_blank" href="/">Забронировать</a>
                 </div>
               </div>
             </li>
@@ -178,7 +178,7 @@
                     <dt>Цена</dt>
                     <dd>от 14500 $</dd>
                   </dl>
-                  <button class="products-list__button" type="button">Забронировать</button>
+                  <a class="products-list__button" target="_blank" href="/">Забронировать</a>
                 </div>
               </div>
             </li>
@@ -202,7 +202,7 @@
                     <dt>Цена</dt>
                     <dd>от 14500 $</dd>
                   </dl>
-                  <button class="products-list__button" type="button">Забронировать</button>
+                  <a class="products-list__button" target="_blank" href="/">Забронировать</a>
                 </div>
               </div>
             </li>
@@ -226,7 +226,7 @@
                     <dt>Цена</dt>
                     <dd>от 9700 $</dd>
                   </dl>
-                  <button class="products-list__button" type="button">Забронировать</button>
+                  <a class="products-list__button" target="_blank" href="/">Забронировать</a>
                 </div>
               </div>
             </li>
@@ -250,7 +250,7 @@
                     <dt>Цена</dt>
                     <dd>от 18600 $</dd>
                   </dl>
-                  <button class="products-list__button" type="button">Забронировать</button>
+                  <a class="products-list__button" target="_blank" href="/">Забронировать</a>
                 </div>
               </div>
             </li>
@@ -274,7 +274,7 @@
                     <dt>Цена</dt>
                     <dd>от 11700 $</dd>
                   </dl>
-                  <button class="products-list__button" type="button">Забронировать</button>
+                  <a class="products-list__button" target="_blank" href="/">Забронировать</a>
                 </div>
               </div>
             </li>
@@ -298,7 +298,7 @@
                     <dt>Цена</dt>
                     <dd>от 12500 $</dd>
                   </dl>
-                  <button class="products-list__button" type="button">Забронировать</button>
+                  <a class="products-list__button" target="_blank" href="/">Забронировать</a>
                 </div>
               </div>
             </li>
@@ -385,25 +385,23 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__logo-wrapper logo">
-          <a class="logo__link" href="/">
-            <svg class="logo__image logo__image--small" width="42" height="22">
-              <use xlink:href="img/sprite.svg#logo-mobile"></use>
-            </svg>
-            <svg class="logo__image logo__image--middle" width="38" height="20">
-              <use xlink:href="img/sprite.svg#logo-tablet"></use>
-            </svg>
-            <svg class="logo__image logo__image--big" width="70" height="38">
-              <use xlink:href="img/sprite.svg#logo"></use>
-            </svg>
-          </a>
+          <svg class="logo__image logo__image--small" width="42" height="22">
+            <use xlink:href="img/sprite.svg#logo-mobile"></use>
+          </svg>
+          <svg class="logo__image logo__image--middle" width="38" height="20">
+            <use xlink:href="img/sprite.svg#logo-tablet"></use>
+          </svg>
+          <svg class="logo__image logo__image--big" width="70" height="38">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
         </div>
         <nav class="main-nav main-nav--footer">
 
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="/">Преимущества</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="/">Направления</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="/">Ближайшие круизы</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="/">Контакты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#preferns">Преимущества</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#directions">Направления</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#cruis">Ближайшие круизы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
           </ul>
 
           <ul class="main-nav__socials-list socials-list">
