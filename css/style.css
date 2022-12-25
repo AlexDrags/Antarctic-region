@@ -1129,14 +1129,15 @@ button,
   margin-bottom: 10px;
 }
 
-.products-list__item.focus-visible:focus img {
+.products-list__item.focus-visible:focus img,
+.products-list__item.focus-visible:focus span {
   display: none;
   opacity: 0;
 }
 
-.products-list__item.focus-visible:focus span {
-  display: none;
-  opacity: 0;
+.products-list__item.focus-visible:focus .products-list__overlay {
+  display: block;
+  opacity: 1;
 }
 
 .products-list__overlay {
@@ -1149,16 +1150,6 @@ button,
   opacity: 0;
   background-color: #011c40;
   color: #f9fdfb;
-}
-
-.products-list__item:hover .products-list__overlay {
-  display: block;
-  opacity: 1;
-}
-
-.products-list__item:focus .products-list__overlay {
-  display: block;
-  opacity: 1;
 }
 
 .feedback {
@@ -2164,14 +2155,15 @@ iframe {
     opacity: 0.7;
   }
 
-  .products-list__item:hover:not(.focus-visible) img {
+  .products-list__item:hover:not(.focus-visible) img,
+  .products-list__item:hover:not(.focus-visible) span {
     display: none;
     opacity: 0;
   }
 
-  .products-list__item:hover:not(.focus-visible) span {
-    display: none;
-    opacity: 0;
+  .products-list__item:hover:not(.focus-visible) .products-list__overlay {
+    display: block;
+    opacity: 1;
   }
 
   .form [type=text]:hover:not(.focus-visible),
