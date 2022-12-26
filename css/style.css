@@ -611,6 +611,7 @@ button,
 
 .overlay {
   background-color: rgba(0, 43, 102, 0.5);
+  overflow: hidden;
 }
 
 .scroll-lock-ios {
@@ -1840,6 +1841,8 @@ iframe {
   }
 
   .main-nav ul {
+    overflow: scroll;
+    height: 100vh;
     display: none;
     position: absolute;
     row-gap: 10px;
