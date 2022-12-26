@@ -1842,7 +1842,6 @@ iframe {
 
   .main-nav ul {
     overflow: scroll;
-    height: 100vh;
     display: none;
     position: absolute;
     row-gap: 10px;
